@@ -1,6 +1,3 @@
-```markdown
----
-
 ## 0. 前置条件
 
 假设我们已经通过漏洞完成了这些事情：
@@ -778,7 +775,3 @@ fake_IO_3 再用 malloc + memcpy 把 IO_accept_foreign_vtables 写成 rol(_IO_vt
 fake_IO_4 最后用堆上 fake vtable 的 __overflow = system，
 让 _IO_OVERFLOW(fake_IO_4, EOF) 变成 system("/bin/sh")。
 ```
-
-
-
-
